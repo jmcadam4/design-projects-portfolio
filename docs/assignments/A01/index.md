@@ -31,7 +31,20 @@ Website 2: https://javiersanchezramirez.github.io/
   Ramirez's projects, similarly to Tran's, feature very little description although pictures show the work that went into them. The point of the projects being on the website is not to replicate them but to show what areas of interest Ramirez has dived into in his professional ventures. The tone is professional throughout the brief descriptions however it still communicates the purpose of the project. It would have been nice if the skills gained or developed through each project were stated however an engineer will be able to tell without it being laid out in front of them.
 
 
-Household Item Analysis:
+BMW E30 Fuel Pump Assembly Analysis:
+
+This pump is a generic one that failed on me due to a faulty check valve however there are still a lot of good design decisions within it. Automotive parts have a lot of inherent requirements in order to function as expected. This specific part must:
+
+- Work in temperatures ranging from -40 deg F (freezing temp of low quality gasoline) and 140 deg F (upper end of in tank gas temp with high ambient temps and heat soak from engine)
+- Last for thousands of hours and miles
+- Provide continuous 3 bar output and about 2.5 bar at the fuel rail
+- Draw less than 7.5 A
+- Have some amount of resistance to sludge buildup due to low quality gas
+- Provide a minimum usable flow of 105 L/h
+- Hold above 2 bar of fuel pressure after shutoff (where this pump failed)
+- Lock into place in the fuel tank and form an air tight seal
+
+  Even with these specifications there is a lot of room for an engineers discretion. The engineers behind this product had a head start as the OE part was already produced and available to reference so they didn't stray too far from that. The early model cars had a two stage solution with a low pressure sending unit feeding a high pressure pump. This worked well but left many failure modes. 
 ## Decide
 
 
