@@ -40,8 +40,8 @@ This pump is a generic one that failed on me due to a faulty check valve however
 - Provide continuous 3 bar output and about 2.5 bar at the fuel rail
 - Draw less than 7.5 A
 - Have some amount of resistance to sludge buildup due to low quality gas
-- Provide a minimum usable flow of 105 L/h
-- Hold above 2 bar of fuel pressure after shutoff (where this pump failed)
+- Provide sufficient volumetric flow rate for 60 L/h injector output
+- Maintain > 2 bar of fuel pressure after shutoff (where this pump failed)
 - Lock into place in the fuel tank and form an air tight seal
 
 Even with these specifications there is a lot of room for an engineers discretion. The engineers behind this product had a head start as the OE part was already produced and available to reference so they didn't stray too far from that. In order to understand the problem space that the engineers who designed this pump were in, we must first understand the decisions and designs of the engineers who made the original pump.
@@ -55,6 +55,10 @@ To understand why cavitation is such a big issue, we must first understand how a
 Alternative styles of pumps contain the fluid in just one vane as it rotates and rely upon centrifugal force alone to generate pressure. There are benefits to containing fluid in one vane through the full revolution. It's better at sucking fluid in, cavitation reduces performance less as it's isolated to one pocket, and bad tolerancing has less of an effect on the function of the pump. The major issue for an application like this is the pulse of pressure that is created every time a vane comes around to the outlet. Consistency is important for predictable performance. Injector 1 open for a fraction of a second at 2.5 bar would flow a vastly different amount of gas than injector 2 opened right after injector 1 when you account for a pressure drop to 2.3 bar while waiting for another pressure pulse from the pump. Regenerative pumps solve this by maintaining consistent pressure and feed at all times. Fractions of a second don't sound like much but at 6500 rpm, there are roughly 54 injections per second per injector with each injection lasting just .018 ms at 100 percent duty cycle or around 15 ms with stock E30 duty cycles hovering around 85 percent. 
 
 Hopefully this understanding helps make the issues that come with cavitation and inconsistent pressure and flow apparent. A pocket of gas vapor in one of the channels collapses the buildup of pressure along the helical path. It's like having an aluminum driveshaft from transmission to differential that has a fluid coupler specked for a radiator fan in the middle of it. The resistance and ability to transmit force is much lower in the fluid coupler (vapor pocket) than the aluminum shaft (liquid gas). Because of this the pressure at the output plumets as it would at the differential. 
+
+The other output requirement is a volumetric flow rate adequate enough for a maintained injector consumption of 60 L/h. BMW holds that a pump has gone bad if it's output falls bellow 105 L/h. This pump is rated for 130 L/h, giving it a roughly 20 percent degradation threshold. This leaves room for parts to wear. This sounds like plenty of room for error but a poorly made pump would blow through it in no time. For example, fluid leaking out of the intended path inside the pump. The impeller only has blades through a small portion of its radius and any fluid leaving that path is essentially wasted energy. In order to mitigate this, tolerances between the housing and impeller are as low as 25 microns. Poiseuille flow is the governing equation of the amount of leakage through two planar surfaces, Q = w * h^3 * dp / (12 * mu * L). Q is the volumetric leak rate, w is the width of the gap, h is the height of the gap, dp is the pressure differential causing the leak, mu is the viscosity of the fuel (relatively thin), L is the length of the gap along the direction of flow. All values here are linear apart from h, h is cubed. This means the difference between leaks from a 25 micron gap and a 50 micron gap aren't twice as bad, they're 8 times as bad. If this is the only thing driving the failure, 45 microns of degradation is all it takes to render the pump unfit to supply 105 L/h. 
+
+The manufacturers of this pump chose to have 
 
 
 ## Decide
