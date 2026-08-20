@@ -44,7 +44,13 @@ This pump is a generic one that failed on me due to a faulty check valve however
 - Hold above 2 bar of fuel pressure after shutoff (where this pump failed)
 - Lock into place in the fuel tank and form an air tight seal
 
-  Even with these specifications there is a lot of room for an engineers discretion. The engineers behind this product had a head start as the OE part was already produced and available to reference so they didn't stray too far from that. The early model cars had a two stage solution with a low pressure sending unit feeding a high pressure pump. This worked well but left many failure modes. 
+Even with these specifications there is a lot of room for an engineers discretion. The engineers behind this product had a head start as the OE part was already produced and available to reference so they didn't stray too far from that. In order to understand the problem space that the engineers who designed this pump were in, we must first understand the decisions and designs of the engineers who made the original pump.
+
+The early model BMW E30 had a two pump solution with a low pressure sending unit feeding a high pressure pump. This solved problems of the time. In the early 80's, regenerative turbine pumps had the same flaws they do today but a lack of refinement made them much worse. The main problems associated with them are failures when cavitation occurs, an inability to suck fluid through a feeding pipe, and a need for tight tolerances to get the fluid behavior desired.
+
+The cavitation and inability to suck fluid through a pipe are two results of the same problem. In order to suck fluid through a pipe, there must be a vacuum at the inlet. This vacuum is exactly what causes cavitation in gasoline, and it occurs right where the pump should be most effective due to the speed differential between the turbine and the gasoline. In order to solve this problem, BMW and many other manufacturers in the mid to late 80's used a low pressure feed pump to ensure the fluid entering the pump was pressurized. Having fluid being fed into the high pressure pump reduced the risk of vacuum falling below cavitation pressure (about 7 psi for gasoline). The secondary pump changed the means of supply from relying upon vacuum at the inlet to a direct feed with higher, healthier, pressure. 
+
+In order to understand why cavitation is such a big issue, we must first understand how a regenerative turbine works. I have found some useful graphics from HTC Pumps (Image 1) and Roth Pump Company (Image 2)
 ## Decide
 
 
