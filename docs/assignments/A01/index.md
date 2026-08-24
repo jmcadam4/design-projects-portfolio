@@ -14,6 +14,8 @@ The final portion of this assignment is to communicate. The part of the website 
 
 ### Website 1 — Thanh Tran
 
+<img src="Website%20SS%201.png" alt="Thanh Tran portfolio homepage" style="width:100%; height:auto; display:block; margin:1em 0; border:1px solid rgba(0,0,0,.12); border-radius:4px;">
+
 <https://thanhvtran.com/>
 
 It is easy to see from just the homepage that Thanh Tran is an incredibly talented mechanical engineer with a sense of humor. While his joking about being addicted to machining and being useless during his time in Washington could be perceived as unprofessional, I think it gives important insight into who Tran is. When industry professionals are making hiring decisions they want to find someone who will be a good fit for the team, not just with their technical abilities but also with their personality. Across all of the companies that Tran has worked for, his team would have had to work together and effectively communicate hundreds of differences of opinion. Those conflicts go over a lot smoother when they are with someone enjoyable to work with and therefore individual personality plays into team productivity a lot more than many would expect.
@@ -25,6 +27,8 @@ His personal projects provide some detail, explaining some issues that arose and
 Thanh Tran has worked at Google as a product design engineer since January of 2023 and I feel certain that his intuitive website outlining relevant experience helped him secure that position (as well as the fact that you would know each of the companies he worked for by their logo alone).
 
 ### Website 2 — Javier Sanchez Ramirez
+
+<img src="Website%20SS%202.png" alt="Javier Sanchez Ramirez portfolio homepage" style="width:100%; height:auto; display:block; margin:1em 0; border:1px solid rgba(0,0,0,.12); border-radius:4px;">
 
 <https://javiersanchezramirez.github.io/>
 
@@ -127,3 +131,5 @@ One intentional homepage change I will make is adding a part of the page to have
 ### Documentation Standard
 
 My documentation standard will be a thorough writeup that summarizes my work put into the project, I will go through my work and notes in relation to the objective and communicate the thought process at each step as well as issues I ran into while completing it.
+
+## Communicate
