@@ -1,4 +1,4 @@
-# A1 – Portfolio Framework and Fuel Pump Teardown
+# A1 – Create Portfolio
 
 ## Objective
 
@@ -133,3 +133,5 @@ One intentional homepage change I will make is adding a part of the page to have
 My documentation standard will be a thorough writeup that summarizes my work put into the project, I will go through my work and notes in relation to the objective and communicate the thought process at each step as well as issues I ran into while completing it.
 
 ## Communicate
+
+Found in about me section
