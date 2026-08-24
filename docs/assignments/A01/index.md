@@ -104,6 +104,10 @@ On the other end of the pump, at the outlet, there is a 4 piece connector feedin
 
 #### Upper Hanger and Spot Welds
 
+<div style="display:flex; gap:12px; align-items:stretch; margin:1em 0;">
+  <img src="Bottom%20Hanger%20Spot%20Weld.jpg" alt="Bottom hanger spot weld" style="flex:0 1 calc(50% - 6px); min-width:0; height:340px; object-fit:contain; background:#f5f5f5; border-radius:4px;">
+</div>
+
 The upper portion of the hanger is spot welded together and made out of two separate plates that are formed. I have this modeled as well as it's hard to see where the spot welds are at first glance. The upper piece is likely pressed into shape in multiple stages to achieve tight corner radiuses, the lower piece that secures into the gas tank is also formed and pressed to achieve its shape. Once both pieces are formed made, they are spot welded in place. This is slightly different than the continuous welds that the pipes have, heat buildup, speed, and force requirements likely all cause and allow this to be the case. If the manufacturer wanted to weld a continuous ring around 1 mm plate, they would have to work very slowly and give sufficient time to cool to avoid warping or worse. By just spot welding these large surface areas that are being mated, they cut down on the time needed and risk of defects while producing the part all while having a sufficient bond regardless. This is also easily repeatable. A misalignment of .5 mm does not affect a spot welding machine as it would with a weld around a seam. Factory spot welds often melt the material from one panel onto the other so the probe just needs stacked sheet, welding at seams requires a machine to perfectly operate along the edge of the smaller piece.
 
 #### Mounting to the Tank
@@ -123,5 +127,3 @@ One intentional homepage change I will make is adding a part of the page to have
 ### Documentation Standard
 
 My documentation standard will be a thorough writeup that summarizes my work put into the project, I will go through my work and notes in relation to the objective and communicate the thought process at each step as well as issues I ran into while completing it.
-
-## Communicate
