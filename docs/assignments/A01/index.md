@@ -134,7 +134,7 @@ My documentation standard will be a thorough writeup that summarizes my work put
 
 ## Communicate
 
-Found in about me section
+[Found in about me section](../../aboutme/index.md)
 
 ## AI Disclosure
 
