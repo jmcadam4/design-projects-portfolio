@@ -1,8 +1,6 @@
 # AI Disclosure
 
-Two AI sessions went into this portfolio, both on 24 August 2026. This page summarizes what each one was used for, prompt by prompt.
-
-The engineering analysis, the photographs, and the writing on this site are mine. Where AI produced a figure or a calculation, it is noted below.
+This page is a running summary of AI usage, it summarizes what each chat was used for, prompt by prompt. I primarily use Claude.
 
 ## A1 — Fuel Pump Teardown
 
