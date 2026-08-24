@@ -1,0 +1,25 @@
+/* Clearer heading hierarchy for assignment write-ups */
+
+.md-typeset h2 {
+  margin-top: 2.4em;
+  padding-bottom: 0.25em;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  font-weight: 600;
+}
+
+.md-typeset h3 {
+  margin-top: 2em;
+  font-size: 1.25em;
+  font-weight: 600;
+}
+
+.md-typeset h4 {
+  margin-top: 1.6em;
+  font-size: 1.05em;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.md-typeset h1 + h2 {
+  margin-top: 1.2em;
+}
