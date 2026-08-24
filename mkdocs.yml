@@ -1,4 +1,4 @@
-site_name: MEGR 2157 – Design Portfolio
+site_name: MEGR 2156 – Design Portfolio
 site_description: Design portfolio documentation, built with the Analyze / Decide / Communicate framework
 
 theme:
@@ -8,6 +8,8 @@ theme:
   features:
     - navigation.instant
     - navigation.tracking
+    - navigation.top
+    - toc.follow
 
 nav:
   - Home: index.md
@@ -24,4 +26,15 @@ nav:
       - A8: assignments/A08/index.md
       - A9: assignments/A09/index.md
       - A10: assignments/A10/index.md
-      - A11: assignments/A11/index.md
+      - A11: assignments/a11/index.md
+
+markdown_extensions:
+  - toc:
+      permalink: true
+      toc_depth: 4
+  - attr_list
+  - md_in_html
+  - tables
+
+extra_css:
+  - stylesheets/extra.css
