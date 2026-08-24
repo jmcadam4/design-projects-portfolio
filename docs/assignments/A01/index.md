@@ -135,3 +135,9 @@ My documentation standard will be a thorough writeup that summarizes my work put
 ## Communicate
 
 Found in about me section
+
+## AI Disclosure
+
+AI was used on this assignment in two ways. Claude (claude.ai) served as a reference while I worked through the fuel pump teardown — how a regenerative turbine works, how a module like this is manufactured, why BMW changed the fuel delivery setup between early and late E30s, and several supporting calculations — and generated the internal flow diagram and the pressure-buildup graph above. Separately, Claude (Cowork) did the layout and heading work on this page. The photographs, the written analysis, and the decisions I defend here are mine.
+
+The full transcript of the first conversation is published unedited, and a dated account of both sessions is on the [AI Disclosure](../../ai-disclosure/index.md) page.
