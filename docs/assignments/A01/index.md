@@ -1,8 +1,8 @@
 ---
-date: 24 August 2026
-hours: 16
-thumbnail: Listing Image.jpg
-skills: Portfolio critique, product teardown, engineering documentation, MkDocs site build
+Date: 24 August 2026
+Hours: 16
+Thumbnail: Fuel Pump Front.jpg
+Skills: Portfolio critique, product teardown, engineering documentation, MkDocs site build
 ---
 
 # A1 – Create Portfolio
