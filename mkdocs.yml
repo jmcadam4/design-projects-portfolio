@@ -29,6 +29,9 @@ nav:
       - A11: assignments/a11/index.md
       - AI Disclosure: ai-disclosure.md
 
+hooks:
+  - hooks/portfolio_cards.py
+
 markdown_extensions:
   - toc:
       permalink: true
