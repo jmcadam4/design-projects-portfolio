@@ -1,3 +1,11 @@
+[index.md](https://github.com/user-attachments/files/31397893/index.md)
+---
+date: 24 August 2026
+hours: 16
+thumbnail: Listing Image.jpg
+skills: Portfolio critique, product teardown, engineering documentation, MkDocs site build
+---
+
 # A1 – Create Portfolio
 
 ## Objective
@@ -122,7 +130,7 @@ The mechanism used to mount the fuel pump into the tank is quite simple. The tee
 
 ### Homepage Identity
 
-My homepage will contain a brief view of my assignments with clickable links to access them. I will also communicate the purpose of sophomore design and its context within my path to becoming a mechanical engineer in order to get the point of the webpage across to the reader.
+My homepage will contain a brief view of my assignments with clickable links to access them. I will also communicate the purpose of sophomore design and its context within my path to becoming a mechanical engineer in order to get the point of the webpage across to the reader. I would also like to show what classes I have taken before and the classes I have yet to take in order to show that I am applying what I have learned but also leave room for understanding of why some concepts might be overlooked at this point in my learning.
 
 ### Intentional Customization
 
@@ -138,6 +146,4 @@ Found in the [About Me](../../aboutme/index.md) section.
 
 ## AI Disclosure
 
-AI was used on this assignment in two ways. Claude (claude.ai) served as a reference while I worked through the fuel pump teardown — how a regenerative turbine works, how a module like this is manufactured, and why BMW changed the fuel delivery setup between early and late E30s. Separately, Claude (Cowork) did the layout and heading work on this page. The photographs, the written analysis, and the decisions I defend here are mine.
-
-The full transcript of the first conversation is published unedited, and a dated account of both sessions is on the [AI Disclosure](../../ai-disclosure/index.md) page.
+Claude was used as a reference while working through the fuel pump teardown, and produced the internal flow diagram and the pressure graph above. A second session handled the layout of this page. The analysis, the photographs, and the writing are mine. Session summaries are on the [AI Disclosure](../../ai-disclosure.md) page.
