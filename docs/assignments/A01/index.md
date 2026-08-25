@@ -1,3 +1,4 @@
+[index.md](https://github.com/user-attachments/files/31398245/index.md)
 ---
 Date: 24 August 2026
 Hours: 16
@@ -110,6 +111,11 @@ Another design decision made by the BMW engineers was to have the pump submerged
 Now that the pump design is flushed out, the hanger construction must be explained. On either side of the pump there are important parts to fix the pump in an ideal location and orientation. On the bottom there is a rubber gromet that looks like a gasket however it is there primarily to locate the pump inside the hanger. The inlet fits inside of the cone shaped cutout then the cutout fits in the bottom part of the hanger. There is a tab that is flipped up once the pump is placed that secures the pump. The rubber grommet is designed with ribs that prevent the pump from shifting relative to the tab. This can be seen in the images above. The material of this grommet is also important. The pump needs to be built out of a stiff plastic to seal properly but stiff plastic erodes easily when it rubs continuously over time, especially with vibrations coming from the car and pump. In order to keep the properties needed for the pump but avoid degradation and plastic shavings ending up in the tank, the rubber grommet is used. The pliability of the grommet also helps isolate noise and vibrations going through the hanger to the fuel system where it can be quite easily heard from inside the cabin.
 
 #### Outlet Connector
+
+<div style="display:flex; gap:12px; align-items:stretch; margin:1em 0;">
+  <img src="Outlet%20Connector%201.png" alt="Outlet connector, Onshape model" style="flex:1 1 0; min-width:0; height:280px; object-fit:contain; background:#f5f5f5; border-radius:4px;">
+  <img src="Outlet%20Connector%202.png" alt="Outlet connector, Onshape model section" style="flex:1 1 0; min-width:0; height:280px; object-fit:contain; background:#f5f5f5; border-radius:4px;">
+</div>
 
 On the other end of the pump, at the outlet, there is a 4 piece connector feeding the metal tube exiting the assembly. This connector is not what would typically be used by a hobbyist as some fuel hose and clamps would suffice, this part does help with reproducibility and consistency in manufacturing though. There is a central rubber tube surrounded by a plastic piece that has a caps at either end which holds the hose where it needs to be. I modeled this part in onshape in order to give a better visual of what is happening here. There is also a locating bar that puts pressure downwards on the pump through this connector. This is an added measure to make sure the pump is fixed but it also prevents the fitting from shifting up and leaking. This all comes together to reduce manufacturing defects in this area and ensure a secure connection is made.
 
