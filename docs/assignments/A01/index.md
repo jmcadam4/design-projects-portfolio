@@ -30,6 +30,20 @@ The final portion of this assignment is to communicate. The part of the website 
 
 Hopefully at the end of the assignment I will have a functional webpage, a thorough analysis of other portfolios and of a product I hope to one day have the skills to replicate, and an About Me section that explains my objectives and purpose in becoming a mechanical engineer at UNC Charlotte.
 
+## Decide
+
+### Homepage Identity
+
+My homepage will contain a brief view of my assignments with clickable links to access them. I will also communicate the purpose of sophomore design and its context within my path to becoming a mechanical engineer, in order to get the point of the webpage across to the reader. 
+
+### Intentional Customization
+
+One intentional homepage change I will make is adding a part of the page to have pictures referencing each project and a clickable link to access the full writeup of each of them. I would like this to automatically update as I add pictures and content to each assignment. When one hovers over the image, I would like for a side table to pop up showing when I did the project, the things I've learned or practiced with the assignment, and the amount of time it took me.
+
+### Documentation Standard
+
+My documentation standard will be a thorough writeup that summarizes the work I put into the project. I will go through my work and notes in relation to the objective and communicate the thought process at each step, as well as issues I ran into while completing it.
+
 ## Analyze
 
 ### Website 1 — Thanh Tran
@@ -64,7 +78,7 @@ This is a possible area of critique in the professionalism category, as it is im
 
 Ramirez's projects, similarly to Tran's, feature very little description, although pictures show the work that went into them. The point of the projects being on the website is not to replicate them but to show what areas of interest Ramirez has dived into in his professional ventures. The tone is professional throughout the brief descriptions, and it still communicates the purpose of the project. It would have been nice if the skills gained or developed through each project were stated, however an engineer will be able to tell without it being laid out in front of them.
 
-### BMW E30 Fuel Pump Assembly Analysis
+### BMW E30 Regenerative Fuel Pump Cartridge
 
 <div style="display:flex; gap:12px; align-items:stretch; margin:1em 0;">
   <img src="Listing%20Image.jpg" alt="Fuel pump assembly listing image" style="flex:1 1 0; min-width:0; height:340px; object-fit:contain; background:#f5f5f5; border-radius:4px;">
@@ -83,7 +97,6 @@ This pump is a generic one that failed on me due to a faulty check valve, howeve
 - Have some amount of resistance to sludge buildup due to low quality gas
 - Provide sufficient volumetric flow rate for 60 L/h injector output
 - Maintain > 2 bar of fuel pressure after shutoff (where this pump failed)
-- Lock into place in the fuel tank and form an air tight seal
 
 Even with these specifications there is a lot of room for an engineer's discretion. The engineers behind this product had a head start, as the OE part was already produced and available to reference, so they didn't stray too far from that. In order to understand the problem space that the engineers who designed this pump were in, we must first understand the decisions and designs of the engineers who made the original pump.
 
@@ -224,59 +237,9 @@ The drawbacks of it being submerged are that arcing in the motor could be concer
 
 Arcing, the other concern with a submerged pump, is less concerning when you consider how little oxygen is in the pump under ideal conditions. There is so little oxygen that an arc is unlikely to cause a fire, so long as there is fuel going through the pump. For this reason an empty tank is much more dangerous than a full one, but still deemed safe enough.
 
-#### Hanger Construction
+#### Regenerative Fuel Pump Patent US US 4,209,284
 
-<div style="display:flex; gap:12px; align-items:stretch; margin:1em 0;">
-  <img src="Bottom%20Locating%20Gasket.jpg" alt="Bottom locating gasket" style="flex:1 1 0; min-width:0; height:340px; object-fit:contain; background:#f5f5f5; border-radius:4px;">
-  <img src="Locating%20Tab%20Open.jpg" alt="Locating tab, open" style="flex:1 1 0; min-width:0; height:340px; object-fit:contain; background:#f5f5f5; border-radius:4px;">
-</div>
-
-Now that the pump design is fleshed out, the hanger construction must be explained. On either side of the pump there are important parts to fix the pump in an ideal location and orientation.
-
-On the bottom there is a rubber grommet that looks like a gasket, however it is there primarily to locate the pump inside the hanger. The inlet fits inside of the cone shaped cutout, then the cutout fits in the bottom part of the hanger. There is a tab that is flipped up once the pump is placed that secures the pump. The rubber grommet is designed with ribs that prevent the pump from shifting relative to the tab. This can be seen in the images above.
-
-The material of this grommet is also important. The pump needs to be built out of a stiff plastic to seal properly, but stiff plastic erodes easily when it rubs continuously over time, especially with vibrations coming from the car and pump. In order to keep the properties needed for the pump but avoid degradation and plastic shavings ending up in the tank, the rubber grommet is used. The pliability of the grommet also helps isolate noise and vibrations going through the hanger to the fuel system, where it can be quite easily heard from inside the cabin.
-
-#### Outlet Connector
-
-<div style="display:flex; gap:12px; align-items:stretch; margin:1em 0;">
-  <img src="Outlet%20Connector%201.png" alt="Outlet connector, Onshape model" style="flex:1 1 0; min-width:0; height:280px; object-fit:contain; background:#f5f5f5; border-radius:4px;">
-  <img src="Outlet%20Connector%202.png" alt="Outlet connector, Onshape model section" style="flex:1 1 0; min-width:0; height:280px; object-fit:contain; background:#f5f5f5; border-radius:4px;">
-</div>
-
-On the other end of the pump, at the outlet, there is a 4 piece connector feeding the metal tube exiting the assembly. This connector is not what would typically be used by a hobbyist, as some fuel hose and clamps would suffice, but this part does help with reproducibility and consistency in manufacturing.
-
-There is a central rubber tube surrounded by a plastic piece that has caps at either end, which holds the hose where it needs to be. I modeled this part in Onshape in order to give a better visual of what is happening here. There is also a locating bar that puts pressure downwards on the pump through this connector. This is an added measure to make sure the pump is fixed, but it also prevents the fitting from shifting up and leaking. This all comes together to reduce manufacturing defects in this area and ensure a secure connection is made.
-
-#### Upper Hanger and Spot Welds
-
-<div style="display:flex; gap:12px; align-items:stretch; margin:1em 0;">
-  <img src="Bottom%20Hanger%20Spot%20Weld.jpg" alt="Bottom hanger spot weld" style="flex:0 1 calc(50% - 6px); min-width:0; height:340px; object-fit:contain; background:#f5f5f5; border-radius:4px;">
-</div>
-
-The upper portion of the hanger is spot welded together and made out of two separate plates that are formed. I have this modeled as well, as it's hard to see where the spot welds are at first glance. The upper piece is likely pressed into shape in multiple stages to achieve tight corner radiuses; the lower piece that secures into the gas tank is also formed and pressed to achieve its shape. Once both pieces are formed, they are spot welded in place.
-
-This is slightly different than the continuous welds that the pipes have. Heat buildup, speed, and force requirements likely all cause and allow this to be the case. If the manufacturer wanted to weld a continuous ring around 1 mm plate, they would have to work very slowly and give sufficient time to cool to avoid warping or worse. By just spot welding these large surface areas that are being mated, they cut down on the time needed and the risk of defects while producing the part, all while having a sufficient bond regardless.
-
-This is also easily repeatable. A misalignment of .5 mm does not affect a spot welding machine as it would a weld around a seam. Factory spot welds often melt the material from one panel onto the other, so the probe just needs stacked sheet; welding at seams requires a machine to perfectly operate along the edge of the smaller piece.
-
-#### Mounting to the Tank
-
-The mechanism used to mount the fuel pump into the tank is quite simple. The teeth of the tank sit inside the grooves with the smaller radius, and as one twists the hanger into place they slide into grooves cut out of the bigger radius. These grooves allow the teeth to slide in initially offset a few mm in the z direction, then pull the hanger down onto the tank. This helps compress the o ring of the fuel pump without exerting all of that force down before twisting, and thus ensures a more secure and firm seal.
-
-## Decide
-
-### Homepage Identity
-
-My homepage will contain a brief view of my assignments with clickable links to access them. I will also communicate the purpose of sophomore design and its context within my path to becoming a mechanical engineer, in order to get the point of the webpage across to the reader. I would also like to show what classes I have taken before and the classes I have yet to take, in order to show that I am applying what I have learned but also leave room for understanding of why some concepts might be overlooked at this point in my learning.
-
-### Intentional Customization
-
-One intentional homepage change I will make is adding a part of the page to have pictures referencing each project and a clickable link to access the full writeup of each of them. I would like this to automatically update as I add pictures and content to each assignment. When one hovers over the image, I would like for a side table to pop up showing when I did the project, the things I've learned or practiced with the assignment, and the amount of time it took me.
-
-### Documentation Standard
-
-My documentation standard will be a thorough writeup that summarizes the work I put into the project. I will go through my work and notes in relation to the objective and communicate the thought process at each step, as well as issues I ran into while completing it.
+A lot of patented progress led to this design, there is no one patent for this turbine however we can look over a similar one to see the considerations when making a pump like this. Patent 4,209,284, Electric motor-driven two-stage fuel pump, outlines one approach at solving the problem of underperforming regenerative pumps before the 1980's. This design utilizes two separate impellers. This uses more power but was a workaround before impellers improved enough to supply ample fuel in one stage. The designer was trying to make up for the losses associated with regenerative turbines by giving the fluid more time to be acted upon. The designer of this pump was trying to do more with less. The flat vanes of the patented design mentioned previously were inefficient but worked. The impeller blades of the fuel pump put into the BMW E30 were designed for the best performance given the specific inputs and outputs required. This is an example of good engineering, the wheel doesn't have to be reinvented but you should certainly figure out a way to add a few spokes. Both designs use regenerative turbines, roller vanes are also popular for fuel pumps. They have the issues mentioned earlier in the thread of pressure coming in pulses which makes them less than ideal for a sports car with an incredibly refined engine, the amazing M20B25. Roller vanes work by essentially scooping fluid up from inlet to outlet, its like an enclosed watermill working in reverse.
 
 ## Communicate
 
