@@ -28,7 +28,7 @@ By A11, every design decision you defend should trace back to something you anal
 
 Every assignment on this site gets a thorough write-up: what I did, the reasoning at each step, and the problems I ran into along the way — not just the final answer.
 
-## Projects
+## Assignments
 
 Hover over a project to see when I did it, what it practiced, and how long it took. Click through for the full write-up.
 
