@@ -210,7 +210,9 @@ Hopefully this understanding helps make the issues that come with cavitation and
 
 The other output requirement is a volumetric flow rate adequate enough for a maintained injector consumption of 60 L/h. BMW holds that a pump has gone bad if its output falls below 105 L/h. This pump is rated for 130 L/h, giving it a roughly 20 percent degradation threshold, which leaves room for parts to wear.
 
-This sounds like plenty of room for error, but a poorly made pump would blow through it in no time — for example, through fluid leaking out of the intended path inside the pump. The impeller only has blades through a small portion of its radius, and any fluid leaving that path is essentially wasted energy. In order to mitigate this, tolerances between the housing and impeller are as low as 25 microns.
+This sounds like plenty of room for error, but a poorly made pump would blow through it in no time — for example, through fluid leaking out of the intended path inside the pump. The impeller only has blades through a small portion of its radius, and any fluid leaving that path is essentially wasted energy. In order to mitigate this, tolerances between the housing and impeller are as low as 15 microns.
+
+<img src="regenerative_pump_internal_leakage_paths.png" alt="Pump Leakage Diagram" style="width:100%; height:auto; display:block; margin:1em 0; border:1px solid rgba(0,0,0,.12); border-radius:4px;">
 
 Poiseuille flow governs the amount of leakage through two planar surfaces:
 
