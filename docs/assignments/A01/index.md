@@ -81,9 +81,8 @@ Ramirez's projects, similarly to Tran's, feature very little description, althou
 ### BMW E30 Regenerative Fuel Pump Cartridge
 
 <div style="display:flex; gap:12px; align-items:stretch; margin:1em 0;">
-  <img src="Listing%20Image.jpg" alt="Fuel pump assembly listing image" style="flex:1 1 0; min-width:0; height:340px; object-fit:contain; background:#f5f5f5; border-radius:4px;">
-  <img src="Fuel%20Pump%20Front.jpg" alt="Fuel pump assembly, front" style="flex:1 1 0; min-width:0; height:340px; object-fit:contain; background:#f5f5f5; border-radius:4px;">
-  <img src="Fuel%20Pump%20Disassembled%20Front.jpg" alt="Fuel pump assembly disassembled, front" style="flex:1 1 0; min-width:0; height:340px; object-fit:contain; background:#f5f5f5; border-radius:4px;">
+  <img src="Regenerative Turbine Pump.jpg" alt="regenerative turbine pump together" style="flex:1 1 0; min-width:0; height:340px; object-fit:contain; background:#f5f5f5; border-radius:4px;">
+  <img src="Regenerative Turbine Pump 2.jpg" alt="regenerative turbine pump apart" style="flex:1 1 0; min-width:0; height:340px; object-fit:contain; background:#f5f5f5; border-radius:4px;">
 </div>
 
 #### Design Requirements
