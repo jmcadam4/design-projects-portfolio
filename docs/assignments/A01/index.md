@@ -243,6 +243,8 @@ Arcing, the other concern with a submerged pump, is less concerning when you con
 
 A lot of patented progress led to this design, there is no one patent for this turbine however we can look over a similar one to see the considerations when making a pump like this. Patent 4,209,284, Electric motor-driven two-stage fuel pump, outlines one approach at solving the problem of underperforming regenerative pumps before the 1980's. This design utilizes two separate impellers. This uses more power but was a workaround before impellers improved enough to supply ample fuel in one stage. The designer was trying to make up for the losses associated with regenerative turbines by giving the fluid more time to be acted upon. The designer of this pump was trying to do more with less. The flat vanes of the patented design mentioned previously were inefficient but worked. The impeller blades of the fuel pump put into the BMW E30 were designed for the best performance given the specific inputs and outputs required. This is an example of good engineering, the wheel doesn't have to be reinvented but you should certainly figure out a way to add a few spokes. Both designs use regenerative turbines, roller vanes are also popular for fuel pumps. They have the issues mentioned earlier in the thread of pressure coming in pulses which makes them less than ideal for a sports car with an incredibly refined engine, the amazing M20B25. Roller vanes work by essentially scooping fluid up from inlet to outlet, its like an enclosed watermill working in reverse.
 
+<a href="https://patents.google.com/patent/US4209284A/en?oq=US+4%2c209%2c284">Patent</a>
+
 ## Communicate
 
 Found in the [About Me](../../aboutme/index.md) section.
