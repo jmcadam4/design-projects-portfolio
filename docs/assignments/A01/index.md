@@ -88,6 +88,72 @@ The cavitation and inability to suck fluid through a pipe are two results of the
 
 To understand why cavitation is such a big issue, we must first understand how a regenerative turbine works. I have found some useful graphics from HTC Pumps (images 1,3) and Roth Pump Company (image 2). Regenerative pumps rely upon cycling fluid in a helical path, slowly building pressure as it flows around the internal channel. You can see in image 1 the helical path that the fluid flows in, each time the fluid flows back into a vane of the turbine, it picks up speed and is flung outwards again into the channel. It is this that gives the pump its name. If you track one drop of fuel from inlet to outlet, it interacts with the dozens of turbine vanes, picking up a tiny bit of pressure and momentum every time, but still spends much of it's time in the channel where the vanes have minimal influence on it. This flow pattern gives regenerative pumps their main benefit for an application like this. They have a consistent pressure output. Because fluid moves somewhat independently of the turbine, the pressure gradient is much more linear throughout the path from inlet to outlet. Regardless of the radial offset of the upcoming vane, it will have the same output pressure. That part about fluid moving slower than the turbine has its drawbacks though. Regenerative pumps are less efficient than typical pumps, largely because fluid only interacts with the turbine momentarily, it's not "fixed" to it. Attached below is a rough graph that I had Claude generate for me to show the buildup of pressure in a regenerative pump. This graph also highlights the drop in performance associated with poor or degraded tolerances.
 
+<figure markdown="span">
+
+<div style="display: flex; flex-wrap: wrap; gap: 16px; margin-bottom: 10px; font-size: 12px; color: var(--text-secondary);">
+  <span style="display: flex; align-items: center; gap: 5px;"><span style="width: 14px; height: 3px; border-radius: 1px; background: #2a78d6;"></span>Healthy — tight face clearance</span>
+  <span style="display: flex; align-items: center; gap: 5px;"><span style="width: 14px; height: 0; border-top: 3px dashed #eb6834;"></span>Worn — open face clearance</span>
+  <span style="display: flex; align-items: center; gap: 5px;"><span style="width: 14px; height: 0; border-top: 2px dotted #898781;"></span>3.0 bar target</span>
+</div>
+<div style="position: relative; width: 100%; height: 320px;">
+  <canvas id="regenPressure" role="img" aria-label="Line chart of fuel pressure against angular position around a regenerative turbine pump channel. A healthy pump rises steeply at first and flattens toward 3.0 bar at the outlet at 330 degrees. A worn pump starts with the same initial slope but flattens far earlier and reaches only about 1.8 bar.">Pressure by angle from inlet: healthy pump reaches 3.0 bar at 330 degrees; worn pump reaches only 1.8 bar.</canvas>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script>
+(function(){
+  function draw(){
+  var el = document.getElementById('regenPressure');
+  if (!el || !window.Chart || el.dataset.drawn) { return; }
+  el.dataset.drawn = '1';
+  var cs = getComputedStyle(document.documentElement);
+  var muted = cs.getPropertyValue('--text-muted').trim() || '#898781';
+  var sec = cs.getPropertyValue('--text-secondary').trim() || '#52514e';
+  var dark = matchMedia('(prefers-color-scheme: dark)').matches;
+  var grid = dark ? '#2c2c2a' : '#e1e0d9';
+  var labels = [0,30,60,90,120,150,180,210,240,270,300,330];
+  new Chart(document.getElementById('regenPressure'), {
+    type: 'line',
+    data: { labels: labels, datasets: [
+      { label: 'Healthy', data: [0,0.43,0.82,1.17,1.48,1.77,2.03,2.26,2.48,2.67,2.84,3.00],
+        borderColor: '#2a78d6', backgroundColor: '#2a78d6', borderWidth: 2, tension: 0.3,
+        pointRadius: 0, pointHoverRadius: 5 },
+      { label: 'Worn', data: [0,0.40,0.73,0.98,1.19,1.35,1.48,1.59,1.67,1.74,1.79,1.83],
+        borderColor: '#eb6834', backgroundColor: '#eb6834', borderWidth: 2, borderDash: [7,5], tension: 0.3,
+        pointRadius: 0, pointHoverRadius: 5 },
+      { label: 'Target', data: [3,3,3,3,3,3,3,3,3,3,3,3],
+        borderColor: muted, borderWidth: 1.5, borderDash: [2,4], tension: 0,
+        pointRadius: 0, pointHoverRadius: 0 }
+    ]},
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      interaction: { mode: 'index', intersect: false },
+      plugins: { legend: { display: false }, tooltip: {
+        callbacks: { title: function(i){ return i[0].label + '\u00B0 from inlet'; },
+          label: function(c){ return c.dataset.label + ': ' + c.parsed.y.toFixed(2) + ' bar'; } } } },
+      scales: {
+        y: { min: 0, max: 3.4, title: { display: true, text: 'pressure (bar gauge)', color: sec, font: { size: 12 } },
+             ticks: { color: muted, font: { size: 11 }, callback: function(v){ return v.toFixed(1); } },
+             grid: { color: grid, drawBorder: false } },
+        x: { title: { display: true, text: 'position around the ring (degrees from inlet)', color: sec, font: { size: 12 } },
+             ticks: { color: muted, font: { size: 11 }, autoSkip: false },
+             grid: { display: false } }
+      }
+    }
+  });
+  }
+  if (window.document$ && typeof window.document$.subscribe === 'function') {
+    window.document$.subscribe(function(){ setTimeout(draw, 0); });
+  } else if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', draw);
+  } else {
+    draw();
+  }
+})();
+</script>
+
+<figcaption>Pressure buildup around the channel of a regenerative pump, inlet to outlet. Qualitative illustration, not measured data.</figcaption>
+</figure>
+
 Alternative styles of pumps contain the fluid in just one vane as it rotates and rely upon centrifugal force alone to generate pressure. There are benefits to containing fluid in one vane through the full revolution. It's better at sucking fluid in, cavitation reduces performance less as it's isolated to one pocket, and bad tolerancing has less of an effect on the function of the pump. The major issue for an application like this is the pulse of pressure that is created every time a vane comes around to the outlet. Consistency is important for predictable performance. Injector 1 open for a fraction of a second at 2.5 bar would flow a vastly different amount of gas than injector 2 opened right after injector 1 when you account for a pressure drop to 2.3 bar while waiting for another pressure pulse from the pump. Regenerative pumps solve this by maintaining consistent pressure and feed at all times. Fractions of a second don't sound like much but at 6500 rpm, there are roughly 54 injections per second per injector with each injection lasting just .018 ms at 100 percent duty cycle or around 15 ms with stock E30 duty cycles hovering around 85 percent.
 
 Hopefully this understanding helps make the issues that come with cavitation and inconsistent pressure and flow apparent. A pocket of gas vapor in one of the channels collapses the buildup of pressure along the helical path. It's like having an aluminum driveshaft from transmission to differential that has a fluid coupler specked for a radiator fan in the middle of it. The resistance and ability to transmit force is much lower in the fluid coupler (vapor pocket) than the aluminum shaft (liquid gas). Because of this the pressure at the output plumets as it would at the differential.
