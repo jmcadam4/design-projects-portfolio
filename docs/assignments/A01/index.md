@@ -1,4 +1,3 @@
-[index.md](https://github.com/user-attachments/files/31398245/index.md)
 ---
 Date: 24 August 2026
 Hours: 16
