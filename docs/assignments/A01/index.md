@@ -122,7 +122,7 @@ The mechanism used to mount the fuel pump into the tank is quite simple. The tee
 
 ### Homepage Identity
 
-My homepage will contain a brief view of my assignments with clickable links to access them. I will also communicate the purpose of sophomore design and its context within my path to becoming a mechanical engineer in order to get the point of the webpage across to the reader. I would also like to show what classes I have taken before and the classes I have yet to take in order to show that I am applying what I have learned but also leave room for understanding of why some concepts might be overlooked at this point in my learning.
+My homepage will contain a brief view of my assignments with clickable links to access them. I will also communicate the purpose of sophomore design and its context within my path to becoming a mechanical engineer in order to get the point of the webpage across to the reader.
 
 ### Intentional Customization
 
