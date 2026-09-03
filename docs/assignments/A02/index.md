@@ -72,7 +72,9 @@ To compare the two, I repeated the calculations for a truss with no central memb
   <figcaption style="margin-top:.6em; font-size:.75rem; line-height:1.45; color:var(--md-default-fg-color--light);">Minimum element cross-section solved symbolically as A = nFₘₐₓ/σ, then evaluated at 634.06 mm²</figcaption>
 </figure>
 
-This was the geometry I settled on for the problem space, so I moved on to calculating the pin size and the required cross-sectional area. I used a single shear calculation (τ = nV/A) to find a minimum allowable pin diameter of 13.46 mm. I then sized the square stock needed to maintain 634.06 mm² of net cross-sectional area through the pin hole. This gave me an approximate member size to work from while building the CAD model and running a second design iteration.
+This was the geometry I settled on for the problem space, so I moved on to calculating the pin size and the required cross-sectional area. I used a single shear calculation (τ = nV/A) to find a minimum allowable pin diameter of 13.46 mm. I then sized the square stock needed to maintain 634.06 mm² of net cross-sectional area through the pin hole. This gave me an approximate member size to work from while building the CAD model and running a second design iteration. 
+
+For the cross section, I used force over area to get the minimum allowable area. I drew a square but it would be the same regardless of shape in most situations. There is a difference in yield strength between square and cylindrical stock so I went with the lower of the two (230 MPa for square stock).
 
 ### CAD Model and Static Stress Setup
 
