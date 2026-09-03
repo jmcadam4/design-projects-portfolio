@@ -21,10 +21,10 @@ The first thing I wanted to do when approaching this problem was assume what wou
 <div class="carousel" data-carousel aria-roledescription="carousel" aria-label="Joint method hand calculations">
   <div class="carousel__viewport">
     <ul class="carousel__track" data-track>
-      <li class="carousel__slide"><img src="A02%20pic%204.png" width="573" height="491" alt="Free body diagrams for joints D and C, with the symmetry relations F_DE = F_CE and F_AD = F_BC."></li>
-      <li class="carousel__slide"><img src="A02%20pic%203.png" width="750" height="490" alt="Free body diagrams for joints E, A and B, noting the bending force at E."></li>
-      <li class="carousel__slide"><img src="A02%20pic%202.png" width="788" height="760" alt="Assembled equation set with knowns P = 25 kN, a = 0.4 m, b = 0.3 m, solved for the member forces."></li>
-      <li class="carousel__slide"><img src="A02%20Pic%201.png" width="782" height="167" alt="Sum of forces at joint D showing F_DE and F_CE carry no load, with F_DC = 33.3 kN."></li>
+      <li class="carousel__slide"><img src="A02 pic 4.png" width="573" height="491" alt="Free body diagrams for joints D and C, with the symmetry relations F_DE = F_CE and F_AD = F_BC."></li>
+      <li class="carousel__slide"><img src="A02 pic 3.png" width="750" height="490" alt="Free body diagrams for joints E, A and B, noting the bending force at E."></li>
+      <li class="carousel__slide"><img src="A02 pic 2.png" width="788" height="760" alt="Assembled equation set with knowns P = 25 kN, a = 0.4 m, b = 0.3 m, solved for the member forces."></li>
+      <li class="carousel__slide"><img src="A02 Pic 1.png" width="782" height="167" alt="Sum of forces at joint D showing F_DE and F_CE carry no load, with F_DC = 33.3 kN."></li>
     </ul>
   </div>
   <button class="carousel__arrow carousel__arrow--prev" type="button" data-prev aria-label="Previous image"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.4 4.6 8 12l7.4 7.4 1.4-1.4L10.8 12l6-6z"/></svg></button>
