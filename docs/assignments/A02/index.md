@@ -120,8 +120,13 @@ There was a 33 percent weight savings when switching to HSS, from 92.83 lbs. to 
 
 ### Further Optimization
 
-There is still a lot of optimization that can be done. After I had already finished the design, I stumbled upon and interesting youtube video by the efficient engineer talking about optimization and Mitchel structures that can be viewed <a href="https://www.youtube.com/watch?v=dICWP3yHJmE">here</a>. Watching this I realized just how far off I was from a perfectly optimal part but I was still happy about the general design and the ability to manufacture it.
+There is still a lot of optimization that can be done. After I had already finished the design, I stumbled upon and interesting youtube video by the efficient engineer talking about optimization and Mitchel structures that can be viewed <a href="https://www.youtube.com/watch?v=dICWP3yHJmE">here</a>. Watching this I realized just how far off I was from a perfectly optimal part but I was still happy about the general design and the ability to manufacture it. 
 
+Beyond geometric optimizations, there are also improvements to be made in the beam dimensions. I didn't do the math to figure out the ideal type of beam to use but I have a feeling it isn't square stock. There were still noticeable gains from it so it will work but if this were actually being built I would like to be a bit more thorough when making decisions like that.  
+
+# Lessons Learned
+
+Through this assignment I learned how to apply different types of constraints when doing stress analysis in fusion 360, I had never used anything but fixed constraints prior to this. I also was able to see the benefits of sticking to construction standards like using HSS rather than large steel bars. Looking forward I would like to do things in a different order. If it would be permitted it would be a lot more efficient to generate a structure using automated topology optimization then go through it for strength as it only shows the best paths for your members to follow, not what your members need to look like. 
 
 ## AI Disclosure
 
