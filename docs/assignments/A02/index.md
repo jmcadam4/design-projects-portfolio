@@ -150,6 +150,10 @@ Through this assignment I learned how to apply different constraint types in a F
   <figcaption style="margin-top:.6em; font-size:.75rem; color:var(--md-default-fg-color--light);">Density-based topology optimization of a 2D cantilever beam Via Tomas Zegard "Simultaneous discrete and continuum multiresolution topology optimization"</figcaption>
 </figure>
 
+## Time Taken
+
+This assignment took me about 12 hours.
+
 ## AI Disclosure
 
 Claude was used to lay out this page — placing the figures, writing the image captions, and adding the section headings. The truss design, the hand calculations, the CAD, the FEA runs and the writing are mine. Session summaries are on the [AI Disclosure](../../ai-disclosure.md) page.
