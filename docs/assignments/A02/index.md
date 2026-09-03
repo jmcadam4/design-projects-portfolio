@@ -59,7 +59,7 @@ I updated the CAD and added variables to define governing dimensions now that th
 
 Now with my new model, I uploaded it to fusion again and ran a analysis. The effective safety factor had dropped to 1.869 which is worse than the result for the solid part but I was okay with that given that this design could actually be built and would be more economical than using solid blocks of steel. On top of this, the loads this assignment has us account for were still within the usable threshold.
 
-There is still a lot of optimization that can be done. After I had already finished the design, I stumbled upon and interesting youtube video by the efficient engineer talking about optimization and Mitchel structures. Watching this I realized just how far off I was from a perfectly optimal part but I was still happy about the general design and the ability to manufacture it. 
+There is still a lot of optimization that can be done. After I had already finished the design, I stumbled upon and interesting youtube video by the efficient engineer talking about optimization and Mitchel structures that can be viewed <a href="https://www.youtube.com/watch?v=dICWP3yHJmE">here</a>. Watching this I realized just how far off I was from a perfectly optimal part but I was still happy about the general design and the ability to manufacture it. 
 
 ## Decide
 _Which geometry did you select, and why? This is your first open design choice in the course — defend it._
