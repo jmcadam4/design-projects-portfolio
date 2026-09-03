@@ -124,6 +124,10 @@ There is still a lot of optimization that can be done. After I had already finis
 
 Beyond geometric optimizations, there are also improvements to be made in the beam dimensions. I didn't do the math to figure out the ideal type of beam to use but I have a feeling it isn't square stock. There were still noticeable gains from it so it will work but if this were actually being built I would like to be a bit more thorough when making decisions like that.  
 
+## CAD
+
+The CAD work can be viewed at this <a href="https://cad.onshape.com/documents/9a64f8d71786ad7761bfafa7/w/6ad37b1f1fbfa22524d61dbe/e/0dea0ed959580d203f137b30?renderMode=0&uiState=6a98f49b4ce07a8e8c4d2027">link.</a> The final product is labeled "FINAL Diamond HSS".
+
 # Lessons Learned
 
 Through this assignment I learned how to apply different types of constraints when doing stress analysis in fusion 360, I had never used anything but fixed constraints prior to this. I also was able to see the benefits of sticking to construction standards like using HSS rather than large steel bars. Looking forward I would like to do things in a different order. If it would be permitted it would be a lot more efficient to generate a structure using automated topology optimization then go through it for strength as it only shows the best paths for your members to follow, not what your members need to look like. 
