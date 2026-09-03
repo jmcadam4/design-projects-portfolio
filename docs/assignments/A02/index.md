@@ -132,7 +132,7 @@ I uploaded the new model to Fusion and ran the analysis again. The effective saf
 
 There was a 33 percent weight savings when switching to HSS, from 92.83 lbs. to 62.025 lbs. (42 to 28 kg). This is a substantial gain, and it still assumes solid cores around the pins. Given the load it is built to support is 5,098.58 kg, I would say that 28 kg of dead weight is tolerable in most applications.
 
-## Pin Modeling
+### Pin Modeling
 
 <figure style="margin:1.6em 0; text-align:center;">
   <img src="Screenshot%202026-09-03%20085448.png" width="682" height="593" alt="Combined pin weight from the 0.278 lb/in³ density — 6,369.68 mm³ per pin at 0.049 kg" style="width:100%; max-width:720px; height:auto; display:block; margin:0 auto; border:1px solid var(--md-default-fg-color--lightest); border-radius:6px;">
@@ -147,7 +147,7 @@ There is still considerable optimisation left to do. After finishing the design 
 
 Beyond geometric optimizations, there are also improvements to be made in the beam dimensions. I did not work through the mathematics to identify the optimal profile, and I doubt it is square stock. The gains from the section I chose were still measurable, so it is serviceable, but if this were being built I would want to justify that choice more rigorously.  
 
-## CAD
+### CAD
 
 The CAD work can be viewed at this <a href="https://cad.onshape.com/documents/9a64f8d71786ad7761bfafa7/w/6ad37b1f1fbfa22524d61dbe/e/0dea0ed959580d203f137b30?renderMode=0&uiState=6a98f49b4ce07a8e8c4d2027">link.</a> The final product is labeled "FINAL Diamond HSS".
 
