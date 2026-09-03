@@ -131,6 +131,10 @@ I uploaded the new model to Fusion and ran the analysis again. The effective saf
 
 There was a 33 percent weight savings when switching to HSS, from 92.83 lbs. to 62.025 lbs. (42 to 28 kg). This is a substantial gain, and it still assumes solid cores around the pins. Given the load it is built to support is 5,098.58 kg, I would say that 28 kg of dead weight is tolerable in most applications.
 
+## Pin Modeling
+
+I modeled the pins to have a 13.5 mm diameter at a length of 44.5 mm. I did this so the slot in the truss was half the depth of the pin and therefore the other side of the single shear connection could have the width to support the load. 
+
 ### Further Optimization
 
 There is still considerable optimisation left to do. After finishing the design I came across a YouTube video by The Efficient Engineer on structural optimisation and Michell structures, which can be viewed <a href="https://www.youtube.com/watch?v=dICWP3yHJmE">here</a>. Watching it showed me how far the part sits from a genuinely optimal structure, though I remain satisfied with the overall design and with the fact that it could be built. 
