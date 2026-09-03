@@ -128,6 +128,11 @@ Beyond geometric optimizations, there are also improvements to be made in the be
 
 Through this assignment I learned how to apply different types of constraints when doing stress analysis in fusion 360, I had never used anything but fixed constraints prior to this. I also was able to see the benefits of sticking to construction standards like using HSS rather than large steel bars. Looking forward I would like to do things in a different order. If it would be permitted it would be a lot more efficient to generate a structure using automated topology optimization then go through it for strength as it only shows the best paths for your members to follow, not what your members need to look like. 
 
+<figure style="margin:1.5em 0; text-align:center;">
+  <img src="images (2).jpg" width="522" height="370" alt="Picture" style="width:100%; max-width:50%; height:auto; display:block; margin:0 auto; border:1px solid var(--md-default-fg-color--lightest); border-radius:4px;">
+  <figcaption style="margin-top:.6em; font-size:.75rem; color:var(--md-default-fg-color--light);">Density-based topology optimization of a 2D cantilever beam Via Tomas Zegard "Simultaneous discrete and continuum multiresolution topology optimization"</figcaption>
+</figure>
+
 ## AI Disclosure
 
 Claude was used to lay out this page — placing the figures, writing the image captions, and adding the section headings. The truss design, the hand calculations, the CAD, the FEA runs and the writing are mine. Session summaries are on the [AI Disclosure](../../ai-disclosure.md) page.
