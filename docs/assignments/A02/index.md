@@ -19,6 +19,7 @@
 The first thing I wanted to do when approaching this problem was assume what would be a good truss design. I went with members between A, B, C,and D with two members in the center running from C and D to the middle of AB. I realized pretty quickly into calculating forces that members CE and DE would only produce a bending force on AB but I still wanted to see how it would fair compared to not having them. 
 
 
+
 Once I felt like I had some concept of a design worth testing I sketched it out and started solving using the joint method. 
 
 I wanted to compare this to a design with no central members so I redid the calculations for the figure pictured above. Knowing forces through AB, BC, CD, and AD were the same across the two designs, I had proven that the central members weren't doing anything without calculating bending stress. 
@@ -38,11 +39,19 @@ The results were far from ideal once bending was factored into things. While the
 
 I then moved onto the next step which was figuring out what style of beam I would use for this. I figured a box beam would work best as I needed all the bearing area I could get around the pins. As you can see from my calculations above, I tried to get dimensions that supported 8 and 4 mm wall thicknesses but I was messing something up. I started solving again using variables for the thickness and was able to get a result for 8 mm walls.
 
+
+
 I updated the CAD and added variables to define governing dimensions now that they were more set in stone. I realized at this point I should have done this sooner as it would have sped up changes greatly, but I'll hold onto that for the next assignment. I still needed more strength around the pins. Knowing this I initially considered cylindrical sleeves but later pivoted to blocks inside the tube surrounding the pin holes. In application there would need to be a separate part at A,B,C, and D that had the beams attached to it in order to reasonably manufacture the truss but given the timeline and scope of the assignment I opted not to worry about that for now. 
+
+
 
 Now with my new model, I uploaded it to fusion again and ran a analysis. The effective safety factor had dropped to 1.869 which is worse than the result for the solid part but I was okay with that given that this design could actually be built and would be more economical than using solid blocks of steel. On top of this, the loads this assignment has us account for were still within the usable threshold.
 
+
+
 There is still a lot of optimization that can be done. After I had already finished the design, I stumbled upon and interesting youtube video by the efficient engineer talking about optimization and Mitchel structures that can be viewed <a href="https://www.youtube.com/watch?v=dICWP3yHJmE">here</a>. Watching this I realized just how far off I was from a perfectly optimal part but I was still happy about the general design and the ability to manufacture it. 
+
+
 
 ## Decide
 _Which geometry did you select, and why? This is your first open design choice in the course — defend it._
