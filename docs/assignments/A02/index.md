@@ -139,7 +139,7 @@ There was a 33 percent weight savings when switching to HSS, from 92.83 lbs. to 
   <figcaption style="margin-top:.6em; font-size:.75rem; line-height:1.45; color:var(--md-default-fg-color--light);">Combined pin weight from the 0.278 lb/in³ density — 6,369.68 mm³ per pin at 0.049 kg</figcaption>
 </figure>
 
-I modeled the pins to have a 13.5 mm diameter at a length of 44.5 mm. I did this so the slot in the truss was half the depth of the pin and therefore the other side of the single shear connection could have the width to support the load. 
+I modeled the pins to have a 13.5 mm diameter at a length of 44.5 mm. I did this so the slot in the truss was half the depth of the pin and therefore the other side of the single shear connection could have the width to support the load. My hand calculations had the weight at 0.049 kg and the simulations estimated the same meaning both should be pretty accurate.
 
 ### Further Optimization
 
