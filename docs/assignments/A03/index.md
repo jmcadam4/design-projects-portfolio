@@ -2,17 +2,34 @@
 
 ## Objective
 
-- Use axial deflection modeling to design its dimensions
-- Use parametric design to determine a bars length
-- Introduce you to FEA (Finite Element Analysis)
-- Introduce you to linking dimensions to appropriate parameters in CAD.
+- Use axial deflection modeling to design dimensions of a beam under an axial load
+- Use parametric design to determine the bars length
+- Introduce me to FEA (Finite Element Analysis)
+- Introduce me to linking dimensions to appropriate parameters in CAD.
 - Compare and contrast the different analysis
 
 ## Analyze
 
-The first thing I did when approaching this problem was to get the defined material values needed. I knew that 6061 T6 aluminum was a good standard and made sure it was withing the given young's modulus for the problem. It was so I carried on to define the load applied. I decided to hit the middle of the range with a load of 400 lbf. I then needed to get the cross sectional area of the bar to not break under load, the minimum I found was 25.78 mm^2 which I rounded up to be a 6x6 mm bar. In order to get this number, I used the yield strength of 6061 aluminum at 276 MPa and a safety factor of four. Now that I had this, I continued on to get the maximum length that results in a axial deformation of .009 inches or .229 mm. I was given a maximum of 79.88 mm with a safety factor of four or 319.52 mm without a safety factor. With all of the physical demensions solved for, I was able to go on to CAD it.
+IMAGE 1
 
-The CAD was super simple for these beams, I made a 6x6 mm square on the top plane then extruded it out to 79.88 mm, duplicated it, and extruded the new one to 319.52 mm. I took both of these models and uploaded them to fusion to do analysis. After applying the load of 400 lbf to both, I was left with a safety factor well within the range we wanted. The hard part was figuring out how much axial deformation had occured. The safety factor in fusion is based upon the yield stress by default and this was not what we were looking to solve for.
+IMAGE 2
+
+The first thing I did when approaching this problem was to define the material used and therefore get reliable material properties. I knew that 6061 aluminum was a good standard and made sure it was withing the given young's modulus for the problem. The yield strength of 6061 is 276 MPa and the young's modulus is 10 x 10^6. These are allowable properties for the given problem so I carried on to choose the load applied. I decided to shoot in the middle of the range with a load of 400 lbf. With everything needed to find the minimum cross sectional area of the bar, I plugged values into the tensile strength equation. I found the minimum allowable area was 25.78 mm^2. In order to get this number, I used the yield strength of 6061 aluminum at 276 MPa and a safety factor of four. Now that the area was solved for, I continued on to get the maximum length that results in a axial deformation of .009 inches or .229 mm. I found that a maximum length of 79.88 mm with a safety factor of four or 319.52 mm without a safety factor would work. With all of the physical dimensions solved for, I was able to move over to my CAD program.
+
+so to put all the knowns into one place we have
+
+- material: 6061 aluminum
+- E: 10x10^6 psi (68.95 kN/mm^2)
+- Yield strength: 276 MPa (.276 kN/mm^2)
+- Load: 400 lbf (1.779 kN)
+- dL max: .009 inches (.229 mm)
+- Safety factor: 4
+- Min. cross sectional area: 25.78 mm^2
+- Design cross sectional area: 36 mm^2 (6 mm x 6 mm)
+- Length with safety factor: 79.88 mm
+- Length w/o safety factor: 319.52 mm
+
+The CAD was super simple for these beams, I made a 6x6 mm square on the top plane then extruded it out to 79.88 mm, duplicated it, and extruded the new one to 319.52 mm. I took both of these models and uploaded them to fusion to do analysis. I did followed the same steps for both inside of fusion. I applied the load of 400 lbf to one end, fixed the other, then assigned the study material and cross checked the young's modulus and yield strength. These numbers were good so I solved the study for both beams and upon looking at the results, they were exactly as expected. The simulated no safety factor elongation was .228 mm and I had calculated it to be .229 mm. The safety factor elongation was .057 mm which is .228 mm / 4. The .001 mm error was likely due to the fact that the young's modulus was set to 68.9 kN/mm^2 in fusion rather than the 68.95 I used in my calculations. Similarly the default yield strength was 275 MPa and I used 276 MPa for my calculations. On a part like this the error is acceptable but in practice, especially for larger components or ones where errors can compound, I would assign these perfectly or use my hand calculations with the simulation being a way to check my math.
 
 
 ## Decide
