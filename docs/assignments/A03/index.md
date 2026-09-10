@@ -5,7 +5,7 @@ Thumbnail: Screenshot 2026-09-09 193450.png
 Skills: Axial deflection modelling, parametric design, finite element analysis, Fusion 360 static studies, mesh discretisation error
 ---
 
-# A3 – [Topic]
+# A3 – Parametric and FEA
 
 ## Objective
 
