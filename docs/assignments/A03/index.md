@@ -64,7 +64,23 @@ The simulated maximum Von Mises stress is as follows:
 - Square based prism with safety factor: 62.941 MPa (9.13 ksi)
 - Square based prism without safety factor: 61.714 MPa (8.95 ksi)
 
-These values are all well within the yield strength of 6061 aluminum (276 MPa). 
+These values are all well within the yield strength of 6061 aluminum (276 MPa). They are also roughly aligned with the safety factor of four (276 MPa / 4 = 69 MPa)
+
+## Design With Variable Table
+
+Images 6
+
+In order to check my calculations further, I made another design that solved for values inside of Onshape. I then assigned #d to the diameter of the circle and #L to the extrude length. This gave me a bar that should be very predictable when put into a simulation and the safety factor will be exactly right to ensure my calculations are right. 
+
+Images 7
+
+As you can see, the simulated elongation is .057 mm which is exactly one fourth of .228 mm so its spot on.
+
+## Design Reflection and Lessons Learned
+
+The error between the simulated .254 mm elongation compared to my .228 mm calculated elongation was explained in the "Correcting to a Round Section" section. This did however equate to a 11.4 percent error, which is nothing to scoff at. That was the biggest thing I learned while doing this assignment, I hadn't seen mesh quality leading to that large of an error before. I am still curious if that degradation in quality is coming from the step conversion when exporting from Onshape or when solving the simulation in fusion 360. 
+
+Putting a pin hole into the bar, 
 
 ## AI Disclosure
 
