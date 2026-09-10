@@ -86,7 +86,7 @@ As you can see, the simulated elongation is .057 mm which is exactly one fourth 
 
 The error between the simulated .254 mm elongation compared to my .228 mm calculated elongation was explained in the "Correcting to a Round Section" section. This did however equate to a 11.4 percent error, which is nothing to scoff at. That was the biggest thing I learned while doing this assignment, I hadn't seen mesh quality leading to that large of an error before. I am still curious if that degradation in quality is coming from the step conversion when exporting from Onshape or when solving the simulation in fusion 360. 
 
-Putting a pin hole into the bar, 
+Putting a 2mm pin hole into the 6 mm x 6 mm square based prism I had designed would result in the effective area being 4 mm x 6 mm = 24 mm^2. Knowing this, we can find our stress using 0.1779 kN (F) / 24 mm^2 = 74.1 MPa. Kt for circle diameter / bar width = 2 mm / 6 mm is about 2.30. 74.1 MPa * 2.30 gives us a peak stress of 170 MPa, which is still within our yield stress of 276 MPa but only leaves us with a safety factor of 276 MPa / 170 MPa = 1.62. 
 
 ## AI Disclosure
 
