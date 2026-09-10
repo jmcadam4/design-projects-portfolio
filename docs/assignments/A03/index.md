@@ -82,9 +82,13 @@ In order to check my calculations further, I made another design that solved for
 
 As you can see, the simulated elongation is .057 mm which is exactly one fourth of .228 mm so its spot on.
 
+## Bar Weight
+
+To get the bar weight we need to multiply the height (57.409 mm) by the cross sectional area (25.783 mm^2) to get the volume of 1,480.18 mm^3. at 2.70 g/cm^3 we get a weight of 4 grams. That's pretty light to have a safety factor of four with a 350 lbf load.
+
 ## Design Reflection and Lessons Learned
 
-The error between the simulated .254 mm elongation compared to my .228 mm calculated elongation was explained in the "Correcting to a Round Section" section. This did however equate to a 11.4 percent error, which is nothing to scoff at. That was the biggest thing I learned while doing this assignment, I hadn't seen mesh quality leading to that large of an error before. I am still curious if that degradation in quality is coming from the step conversion when exporting from Onshape or when solving the simulation in fusion 360. 
+The error between the simulated .254 mm elongation compared to my .228 mm calculated elongation was explained in the "Correcting to a Round Section" section. This did however equate to a 11.4 percent error, which is nothing to scoff at. That was the biggest thing I learned while doing this assignment, I hadn't seen mesh quality leading to that large of an error before. I am still curious if that degradation in quality is coming from the step conversion when exporting from Onshape or when solving the simulation in fusion 360. Regardless I would like to have hand calculations and use FEA to sanity check them rather than using FEA on it's own.
 
 Putting a 2mm pin hole into the 6 mm x 6 mm square based prism I had designed would result in the effective area being 4 mm x 6 mm = 24 mm^2. Knowing this, we can find our stress using 0.1779 kN (F) / 24 mm^2 = 74.1 MPa. Kt for circle diameter / bar width = 2 mm / 6 mm is about 2.30. 74.1 MPa * 2.30 gives us a peak stress of 170 MPa, which is still within our yield stress of 276 MPa but only leaves us with a safety factor of 276 MPa / 170 MPa = 1.62. 
 
