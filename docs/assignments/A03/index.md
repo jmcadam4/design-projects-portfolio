@@ -73,7 +73,7 @@ These values are all well within the yield strength of 6061 aluminum (276 MPa). 
   <figcaption style="margin-top:.6em; font-size:.75rem; line-height:1.45; color:var(--md-default-fg-color--light);">The Onshape variable table — E, Y, dL, F and sf entered as inputs, with area, length and diameter solved from them</figcaption>
 </figure>
 
-In order to check my calculations further, I made another design that solved for values inside of Onshape. I then assigned #d to the diameter of the circle and #L to the extrude length. This gave me a bar that should be very predictable when put into a simulation and the safety factor will be exactly right to ensure my calculations are right. 
+In order to check my calculations further, I made another design that solved for values inside of Onshape. I then assigned #d to the diameter of the circle and #L to the extrude length. This gave me a bar that should be very predictable when put into a simulation and the safety factor will be exactly right to ensure my calculations are right. I set d to sqrt( (4 * #A) / PI) and L to #dL * #A * #E / (#F * #sf) and it spit out values for a perfect 4 safety factor rather than scaling up to 36 mm^2 like I did for the hand calculations.
 
 <figure style="margin:1.6em 0; text-align:center;">
   <img src="Screenshot%202026-09-09%20214204.png" width="737" height="836" alt="The parametric bar simulated — 0.057 mm displacement, one quarter of the 0.229 mm limit" style="width:100%; max-width:700px; height:auto; display:block; margin:0 auto; border:1px solid var(--md-default-fg-color--lightest); border-radius:6px;">
