@@ -45,11 +45,20 @@ The CAD was super simple for these beams, I made a 6x6 mm square on the top plan
 
 <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:1rem 1.1rem; align-items:start; margin:1.6em 0;"><figure style="margin:0;"><img src="Screenshot%202026-09-09%20200618.png" width="1328" height="722" alt="Round bar, no safety factor — displacement 0.254 mm, meshed as an 8-sided prism" style="width:100%; height:auto; display:block; border:1px solid var(--md-default-fg-color--lightest); border-radius:6px;"><figcaption style="margin-top:.45em; font-size:.72rem; line-height:1.4; text-align:center; color:var(--md-default-fg-color--light);">Round bar, no safety factor — displacement 0.254 mm, meshed as an 8-sided prism</figcaption></figure><figure style="margin:0;"><img src="Screenshot%202026-09-09%20200634.png" width="1207" height="818" alt="Round bar with safety factor 4 — displacement 0.057 mm, meshed with 16 sides" style="width:100%; height:auto; display:block; border:1px solid var(--md-default-fg-color--lightest); border-radius:6px;"><figcaption style="margin-top:.45em; font-size:.72rem; line-height:1.4; text-align:center; color:var(--md-default-fg-color--light);">Round bar with safety factor 4 — displacement 0.057 mm, meshed with 16 sides</figcaption></figure><figure style="margin:0;"><img src="Screenshot%202026-09-09%20201346.png" width="845" height="681" alt="The 8-sided section measures 32.409 mm² against the 36 mm² circle" style="width:100%; height:auto; display:block; border:1px solid var(--md-default-fg-color--lightest); border-radius:6px;"><figcaption style="margin-top:.45em; font-size:.72rem; line-height:1.4; text-align:center; color:var(--md-default-fg-color--light);">The 8-sided section measures 32.409 mm² against the 36 mm² circle</figcaption></figure><figure style="margin:0;"><img src="Screenshot%202026-09-09%20201424.png" width="802" height="671" alt="The 16-sided section measures 35.079 mm², much closer to the true area" style="width:100%; height:auto; display:block; border:1px solid var(--md-default-fg-color--lightest); border-radius:6px;"><figcaption style="margin-top:.45em; font-size:.72rem; line-height:1.4; text-align:center; color:var(--md-default-fg-color--light);">The 16-sided section measures 35.079 mm², much closer to the true area</figcaption></figure></div>
 
-After doing all of this, I realized that the bar was meant to be cylindrical. I redesigned it and checked that so long as the cross sectional area was the same, there was no difference in elongation. This was confirmed for the shorter length accounting for the safety factor but the longer length had a simulated elongation of .254 mm rather than .228 mm. This can be explained by the program using fewer planes when simplifying the shape. You can see in the images above that the circular base is simplified into an 8 sided polygon for the long length and 16 for the shorter one. The cross sectional area of an 8 sided polygon fit inside of a circle with a cross sectional area of 36 mm results in an area of 32.409 mm^2 versus one with 16 sides resulting in an area of 35.07 mm^2. While this is necessary to reduce the compute needed to solve this simulation, it results in a pretty substantial error.
+After doing all of this, I realized that the bar was meant to be cylindrical. I redesigned it and checked that so long as the cross sectional area was the same, there was no difference in elongation. This was confirmed for the shorter length accounting for the safety factor but the longer length had a simulated elongation of .254 mm rather than .228 mm. This can be explained by the program using fewer planes when simplifying the shape. You can see in the images above that the circular base is simplified into an 8 sided polygon for the long length and 16 for the shorter one. The cross sectional area of an 8 sided polygon circumscribed inside of a circle with a cross sectional area of 36 mm^2 results in an area of 32.409 mm^2 versus one with 16 sides resulting in an area of 35.07 mm^2. While this is necessary to reduce the compute needed to solve this simulation, it results in a pretty substantial error. 0.254 mm * (32.409/36) = .226 mm, which is much closer to the .228 mm elongation we got previously. 
 
-## Decide
+## Von Mises
 
-## Communicate
+Images 5
+
+The simulated maximum Von Mises stress is as follows:
+
+- cylindrical member with safety factor: 57.045 MPa (8.27 ksi)
+- cylindrical member without safety factor: 56.517 MPa (8.20 ksi)
+- Square based prism with safety factor: 62.941 MPa (9.13 ksi)
+- Square based prism without safety factor: 61.714 MPa (8.95 ksi)
+
+These values are all well within the yield strength of 6061 aluminum (276 MPa). 
 
 ## AI Disclosure
 
