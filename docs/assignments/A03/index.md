@@ -98,6 +98,10 @@ Putting a 2mm pin hole into the 6 mm x 6 mm square based prism I had designed wo
 
 I spent about five hours on this assignment.
 
+## CAD download
+
+you can access my CAD <a href="https://cad.onshape.com/documents/2fcdc85810965d572052e8f0/w/6e950b158cd5fa4aa38d25de/e/17a815db1d306c4e14136660?renderMode=0&rightPanel=variableTablePanel&uiState=6aa214638988715ffdeb92a1">here.</a> "Calculated w safety factor" is the part studio with the variable table.
+
 ## AI Disclosure
 
 Claude was used to lay out this page — placing the figures and writing the image captions. The design, the hand calculations, the CAD models and the FEA runs are mine; no engineering content was produced by the model. Session summaries are on the [AI Disclosure](../../ai-disclosure.md) page.
