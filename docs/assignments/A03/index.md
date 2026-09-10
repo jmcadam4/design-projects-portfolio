@@ -1,6 +1,6 @@
 ---
 Date: 9 September 2026
-Hours: 4
+Hours: 5
 Thumbnail: Screenshot 2026-09-09 193450.png
 Skills: Axial deflection modelling, parametric design, finite element analysis, Fusion 360 static studies, mesh discretisation error
 ---
@@ -51,7 +51,7 @@ The CAD was super simple for these beams, I made a 6x6 mm square on the top plan
 
 <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:1rem 1.1rem; align-items:start; margin:1.6em 0;"><figure style="margin:0;"><img src="Screenshot%202026-09-09%20200618.png" width="1328" height="722" alt="Round bar, no safety factor — displacement 0.254 mm, meshed as an 8-sided prism" style="width:100%; height:auto; display:block; border:1px solid var(--md-default-fg-color--lightest); border-radius:6px;"><figcaption style="margin-top:.45em; font-size:.72rem; line-height:1.4; text-align:center; color:var(--md-default-fg-color--light);">Round bar, no safety factor — displacement 0.254 mm, meshed as an 8-sided prism</figcaption></figure><figure style="margin:0;"><img src="Screenshot%202026-09-09%20200634.png" width="1207" height="818" alt="Round bar with safety factor 4 — displacement 0.057 mm, meshed with 16 sides" style="width:100%; height:auto; display:block; border:1px solid var(--md-default-fg-color--lightest); border-radius:6px;"><figcaption style="margin-top:.45em; font-size:.72rem; line-height:1.4; text-align:center; color:var(--md-default-fg-color--light);">Round bar with safety factor 4 — displacement 0.057 mm, meshed with 16 sides</figcaption></figure><figure style="margin:0;"><img src="Screenshot%202026-09-09%20201346.png" width="845" height="681" alt="The 8-sided section measures 32.409 mm² against the 36 mm² circle" style="width:100%; height:auto; display:block; border:1px solid var(--md-default-fg-color--lightest); border-radius:6px;"><figcaption style="margin-top:.45em; font-size:.72rem; line-height:1.4; text-align:center; color:var(--md-default-fg-color--light);">The 8-sided section measures 32.409 mm² against the 36 mm² circle</figcaption></figure><figure style="margin:0;"><img src="Screenshot%202026-09-09%20201424.png" width="802" height="671" alt="The 16-sided section measures 35.079 mm², much closer to the true area" style="width:100%; height:auto; display:block; border:1px solid var(--md-default-fg-color--lightest); border-radius:6px;"><figcaption style="margin-top:.45em; font-size:.72rem; line-height:1.4; text-align:center; color:var(--md-default-fg-color--light);">The 16-sided section measures 35.079 mm², much closer to the true area</figcaption></figure></div>
 
-After doing all of this, I realized that the bar was meant to be cylindrical. I redesigned it and checked that so long as the cross sectional area was the same, there was no difference in elongation. This was confirmed for the shorter length accounting for the safety factor but the longer length had a simulated elongation of .254 mm rather than .228 mm. This can be explained by the program using fewer planes when simplifying the shape. You can see in the images above that the circular base is simplified into an 8 sided polygon for the long length and 16 for the shorter one. The cross sectional area of an 8 sided polygon circumscribed inside of a circle with a cross sectional area of 36 mm^2 results in an area of 32.409 mm^2 versus one with 16 sides resulting in an area of 35.07 mm^2. While this is necessary to reduce the compute needed to solve this simulation, it results in a pretty substantial error. 0.254 mm * (32.409/36) = .226 mm, which is much closer to the .228 mm elongation we got previously. 
+After doing all of this, I realized that the bar was meant to be cylindrical. I redesigned it and checked that so long as the cross sectional area was the same, there was no difference in elongation. This was confirmed for the shorter length accounting for the safety factor but the longer length had a simulated elongation of .254 mm rather than .228 mm. This can be explained by the program using fewer planes when simplifying the shape. You can see in the images above that the circular base is simplified into an 8 sided polygon for the long length and 16 for the shorter one. The cross sectional area of an 8 sided polygon circumscribed inside of a circle with a cross sectional area of 36 mm^2 results in an area of 32.409 mm^2 versus one with 16 sides resulting in an area of 35.07 mm^2. While this is necessary to reduce the compute needed to solve this simulation, it results in a pretty substantial error. 0.254 mm * (32.409/36) = .229 mm, which is what we got previously. 
 
 ## Von Mises Stress
 
@@ -80,7 +80,7 @@ In order to check my calculations further, I made another design that solved for
   <figcaption style="margin-top:.6em; font-size:.75rem; line-height:1.45; color:var(--md-default-fg-color--light);">The parametric bar simulated — 0.057 mm displacement, one quarter of the 0.229 mm limit</figcaption>
 </figure>
 
-As you can see, the simulated elongation is .057 mm which is exactly one fourth of .228 mm so its spot on.
+As you can see, the simulated elongation is .057 mm which is exactly one fourth of .228 mm so it's nearly spot on.
 
 ## Bar Weight
 
@@ -90,7 +90,13 @@ To get the bar weight we need to multiply the height (57.409 mm) by the cross se
 
 The error between the simulated .254 mm elongation compared to my .228 mm calculated elongation was explained in the "Correcting to a Round Section" section. This did however equate to a 11.4 percent error, which is nothing to scoff at. That was the biggest thing I learned while doing this assignment, I hadn't seen mesh quality leading to that large of an error before. I am still curious if that degradation in quality is coming from the step conversion when exporting from Onshape or when solving the simulation in fusion 360. Regardless I would like to have hand calculations and use FEA to sanity check them rather than using FEA on it's own.
 
-Putting a 2mm pin hole into the 6 mm x 6 mm square based prism I had designed would result in the effective area being 4 mm x 6 mm = 24 mm^2. Knowing this, we can find our stress using 0.1779 kN (F) / 24 mm^2 = 74.1 MPa. Kt for circle diameter / bar width = 2 mm / 6 mm is about 2.30. 74.1 MPa * 2.30 gives us a peak stress of 170 MPa, which is still within our yield stress of 276 MPa but only leaves us with a safety factor of 276 MPa / 170 MPa = 1.62. 
+## Pin Hole Considerations
+
+Putting a 2mm pin hole into the 6 mm x 6 mm square based prism I had designed would result in the effective area being 4 mm x 6 mm = 24 mm^2. Knowing this, we can find our stress using 1.779 kN (F) / 24 mm^2 = 74.1 MPa. Kt for circle diameter / bar width = 2 mm / 6 mm is about 2.30. 74.1 MPa * 2.30 gives us a peak stress of 170 MPa, which is still within our yield stress of 276 MPa but only leaves us with a safety factor of 276 MPa / 170 MPa = 1.62. 
+
+## Time Spent
+
+I spent about five hours on this assignment.
 
 ## AI Disclosure
 
