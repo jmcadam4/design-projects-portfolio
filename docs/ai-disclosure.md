@@ -80,6 +80,18 @@ Claude was used to lay out this page — placing the figures, writing the image 
 | 1 | 9 September 2026 | The brief and the two square bar results placed into their marked spots |
 | 2 | 9 September 2026 | The remaining six images placed, front matter added for the homepage card, and this section written |
 
-## A4 through A11
+## A4 — Motor Mount Design
+
+Claude was used to lay out this page — placing the figures, writing the image captions, adding the section headings, and adding the front matter that drives the homepage card. The design, the hand calculations, and the CAD and Onshape variable table work are mine; no engineering content was produced by the model.
+
+| Prompt | Date | What it produced |
+| --- | --- | --- |
+| 1 | 16 September 2026 | The assignment brief image placed under Objective, and the unknowns paragraph added under Analyze |
+| 2 | 16 September 2026 | Five images placed in order with my captions, laying out the feature one hand calculations |
+| 3 | 16 September 2026 | Three more images placed under a new Feature Two heading, with my caption |
+| 4 | 16 September 2026 | Seven CAD screenshots placed under a new CAD section, split into the variable-table pair and the build-step group, each with my caption |
+| 5 | 17 September 2026 | Feature One/Two headers added, a Time Spent and AI Disclosure section written, front matter added for the homepage card, this page's A4 entries written, and a grammar pass over the page |
+
+## A5 through A11
 
 No AI used yet.
