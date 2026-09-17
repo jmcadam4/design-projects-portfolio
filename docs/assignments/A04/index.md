@@ -62,7 +62,7 @@ I started the physical part of the CAD by making a simple sketch of a rectangle 
 
 ## CAD Link
 
-access the CAD <a href="https://cad.onshape.com/documents/053d542811c6e47f5feb1c8e/w/db72c9e35e9a8a7a4da2a02e/e/57706137ab376a0c5e80502e?renderMode=0&rightPanel=variableTablePanel&uiState=6aab69aee1a24af6d9f25fcb">here</a>
+Access the CAD <a href="https://cad.onshape.com/documents/053d542811c6e47f5feb1c8e/w/db72c9e35e9a8a7a4da2a02e/e/57706137ab376a0c5e80502e?renderMode=0&rightPanel=variableTablePanel&uiState=6aab69aee1a24af6d9f25fcb">here</a>
 
 ## Time Spent
 
