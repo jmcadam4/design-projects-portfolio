@@ -58,10 +58,6 @@ I first made the variable table. I wasn't exactly sure what I needed, so I went 
 
 I started the physical part of the CAD by making a simple sketch of a rectangle inside of a rectangle. I dimensioned the length of the big rectangle to be equal to b2, the thickness of the small one to be t1, and the width of both to be h1. I then extruded the whole thing in one direction by t2 and just the small rectangle in the opposite direction by b1. This gave me a rough bracket, and all I needed to add were the bolt holes. I added a construction line across the center of feature two and put two 4 mm holes through it. I then went to the face of feature one and added a big circle for the motor boss to fit through and holes for the motor to mount on at 3.4 mm. This is now a complete bracket. Most of the work for this assignment was in the numeric solving, which was a nice change from how I normally approach problems.
 
-## Decide
-
-
-## Communicate
 
 
 ## Time Spent
