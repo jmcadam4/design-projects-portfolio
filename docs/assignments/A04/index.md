@@ -66,4 +66,4 @@ I spent about eight hours on this assignment.
 
 ## AI Disclosure
 
-Claude was used to lay out this page — placing the figures, writing the image captions, adding the section headings, and adding the front matter that drives the homepage card. The design, the hand calculations, and the CAD and Onshape variable table work are mine; no engineering content was produced by the model. Session summaries are on the [AI Disclosure](../../ai-disclosure.md) page.
+Claude was used to lay out this page — placing the figures, writing the image captions, adding the section headings, and adding the front matter that drives the homepage card. The design, the hand calculations, and the CAD and Onshape variable table work are mine. Session summaries are on the [AI Disclosure](../../ai-disclosure.md) page.
