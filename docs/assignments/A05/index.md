@@ -80,4 +80,4 @@ Stress was the governing failure mode for almost everything. This might be prett
 
 ## AI Disclosure
 
-Claude was used to lay out this page — placing the figures, writing the image captions, adding the section headings, and adding the front matter that drives the homepage card. The design, the hand calculations, and the hand drawings are mine; no engineering content was produced by the model. In this conversation, Claude split my written-work PDF into the twelve section images used above and laid out the Objective and Analyze sections with my captions, then, in a follow-up, replaced the placeholder Decide/Communicate headings with the Hand Drawings, Time Spent, Lessons Learned and this AI Disclosure section from text I provided, and added the front matter above. Session summaries are on the [AI Disclosure](../../ai-disclosure.md) page.
+Claude was used to lay out this page — placing the figures, writing the image captions, adding the section headings, and adding the front matter that drives the homepage card. The design, the hand calculations, and the hand drawings are mine. Session summaries are on the [AI Disclosure](../../ai-disclosure.md) page.
