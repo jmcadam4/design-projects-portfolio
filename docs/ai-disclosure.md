@@ -92,6 +92,15 @@ Claude was used to lay out this page — placing the figures, writing the image 
 | 4 | 16 September 2026 | Seven CAD screenshots placed under a new CAD section, split into the variable-table pair and the build-step group, each with my caption |
 | 5 | 17 September 2026 | Feature One/Two headers added, a Time Spent and AI Disclosure section written, front matter added for the homepage card, this page's A4 entries written, and a grammar pass over the page |
 
-## A5 through A11
+## A5 — Five-Member Bracket Design
+
+Claude was used to lay out this page — placing the figures, writing the image captions, adding the section headings, and adding the front matter that drives the homepage card. The design, the hand calculations, and the hand drawings are mine; no engineering content was produced by the model.
+
+| Prompt | Date | What it produced |
+| --- | --- | --- |
+| 1 | 24 September 2026 | The written-work PDF split into twelve section images (knowns/unknowns, diagrams, and an algebraic/solved pair for each of members A–E), placed under Objective and Analyze with my captions |
+| 2 | 24 September 2026 | Decide/Communicate placeholders replaced with Hand Drawings, Time Spent, Lessons Learned and AI Disclosure sections written from my text; front matter added for the homepage card; this page's A5 entries written |
+
+## A6 through A11
 
 No AI used yet.
