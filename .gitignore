@@ -1,5 +1,6 @@
 # mkdocs build output
 site/
+__pycache__/
 
 # OS
 .DS_Store

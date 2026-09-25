@@ -45,3 +45,4 @@ extra_css:
 
 extra_javascript:
   - javascripts/carousel.js
+  - javascripts/lightbox.js
