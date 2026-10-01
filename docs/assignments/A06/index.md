@@ -25,7 +25,7 @@ I pulled dimensions from A5 and made a 3d model of it. It was just one sketch wi
 
 ### Drawing
 
-After this I used the ANSI B IN template in onshape and inserted the part. I arranged it in third angle projection with the top view up above, the right view to the right, and the front view in the bottom left. I made sure nothing was dimensioned twice and tried to give dimensions that would be easy to test rather than the dimensions that were easy to design with. 
+After this I used the ANSI B IN template in onshape and inserted the part. I arranged it in third angle projection with the top view up above, the right view to the right, and the front view in the bottom left. I made sure nothing was dimensioned twice and tried to give dimensions that would be easy to test rather than the dimensions that were easy to design with. I assigned a tighter tolerance to the center par that wraps around the T bar, I did this because I gave more tolerance on the web that wraps around the outside of the T so I needed less up above as to not let it be too loose.
 
 <figure style="margin:1.6em 0; text-align:center;">
   <img src="drawing-template.png" width="892" height="577" alt="Onshape Create Drawing dialog with the ANSI_B_INCH template selected and the No views option chosen." style="width:100%; max-width:600px; height:auto; display:block; margin:0 auto; border:1px solid var(--md-default-fg-color--lightest); border-radius:6px;">
