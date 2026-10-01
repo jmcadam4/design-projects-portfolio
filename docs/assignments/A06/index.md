@@ -1,5 +1,6 @@
 ---
 Date: 30 September 2026
+Hours: 3.5
 Thumbnail: solid-model.png
 Skills: Parametric Onshape modeling, multiview engineering drawings, third angle projection, tolerance blocks, sliding fit tolerancing
 ---
@@ -31,13 +32,17 @@ After this I used the ANSI B IN template in onshape and inserted the part. I arr
   <figcaption style="margin-top:.6em; font-size:.75rem; line-height:1.45; color:var(--md-default-fg-color--light);">Starting the drawing from the ANSI B inch template with no suggested views, so I could place each view myself.</figcaption>
 </figure>
 
+## Time Spent
+
+I spent a total of three and a half hours on this assignment.
+
 ## Lessons Learned
 
 I had made engineering drawings before but I gave more consideration to helping the machinist measure for QC. I also was able to finish the whole process of a part from stress calculations to a cad model with drawings.
 
 ## AI Disclosure
 
-I used minimal AI in the doing of this assignment, only using it for help checking my drawing and placing images on the webpage.
+Claude was used to lay out this page — placing the figures, writing the image captions, adding the section headings, and adding the front matter that drives the homepage card — and to convert my Onshape DXF export into the drawing image and PDF. It also pointed out items to check on the drawing. The parametric model, the variable table, the drawing, and the tolerances are mine. Session summaries are on the [AI Disclosure](../../ai-disclosure.md) page.
 
 ## Communicate
 

@@ -101,6 +101,16 @@ Claude was used to lay out this page — placing the figures, writing the image 
 | 1 | 24 September 2026 | The written-work PDF split into twelve section images (knowns/unknowns, diagrams, and an algebraic/solved pair for each of members A–E), placed under Objective and Analyze with my captions |
 | 2 | 24 September 2026 | Decide/Communicate placeholders replaced with Hand Drawings, Time Spent, Lessons Learned and AI Disclosure sections written from my text; front matter added for the homepage card; this page's A5 entries written |
 
-## A6 through A11
+## A6 — Bracket Drawing
+
+Claude (Claude Code) was used to lay out this page — placing the figures, writing the image captions, adding the section headings, and adding the front matter that drives the homepage card. It also converted my Onshape DXF export into a PNG and PDF for the page, and pointed out items to check on the drawing (a missing X.X line in the tolerance block, an empty title block, and unanswered reflection questions). The parametric model, the variable table, the drawing, and the tolerances are mine; no engineering content was produced by the model.
+
+| Prompt | Date | What it produced |
+| --- | --- | --- |
+| 1 | 30 September 2026 | Six screenshots renamed and placed under Objective and Analyze with captions; the DXF drawing converted to PNG and PDF and placed under Communicate with download links; front matter added for the homepage card; the `docs` folder moved back out of `hooks` after an accidental drag; review notes on the drawing |
+| 2 | 30 September 2026 | Resolved a merge conflict on this page in favor of the local version. No content. |
+| 3 | 30 September 2026 | Hours and a Time Spent section added from my figure, the page's AI Disclosure written, and this page's A6 entries written |
+
+## A7 through A11
 
 No AI used yet.
