@@ -31,6 +31,15 @@ After this I used the ANSI B IN template in onshape and inserted the part. I arr
   <img src="drawing-template.png" width="892" height="577" alt="Onshape Create Drawing dialog with the ANSI_B_INCH template selected and the No views option chosen." style="width:100%; max-width:600px; height:auto; display:block; margin:0 auto; border:1px solid var(--md-default-fg-color--lightest); border-radius:6px;">
   <figcaption style="margin-top:.6em; font-size:.75rem; line-height:1.45; color:var(--md-default-fg-color--light);">Starting the drawing from the ANSI B inch template with no suggested views, so I could place each view myself.</figcaption>
 </figure>
+<figure style="margin:1.6em 0; text-align:center;">
+  <img src="bracket-drawing.png" width="3400" height="2200" alt="Fully dimensioned ANSI B multiview drawing of the bracket in third angle projection: top view above, front view bottom left, right view to the right, with toleranced gap .508 ± .003, depth 1.661 ± .010, pin offset .750 ± .010, a tolerance block, and ASTM A36 steel as the material." style="width:100%; height:auto; display:block; margin:0 auto; border:1px solid var(--md-default-fg-color--lightest); border-radius:6px;">
+  <figcaption style="margin-top:.6em; font-size:.75rem; line-height:1.45; color:var(--md-default-fg-color--light);">Bracket drawing in third angle projection, ANSI B, 1:1, ASTM A36 steel.</figcaption>
+</figure>
+
+## CAD Download
+
+- <a href="bracket-drawing.pdf" download>Download the drawing (PDF)</a>, or the original <a href="Drawing.dxf" download>DXF</a>
+- <a href="A06.step" download>Download the bracket model (STEP)</a>
 
 ## Time Spent
 
@@ -43,16 +52,3 @@ I had made engineering drawings before but I gave more consideration to helping 
 ## AI Disclosure
 
 Claude was used to lay out this page — placing the figures, writing the image captions, adding the section headings, and adding the front matter that drives the homepage card — and to convert my Onshape DXF export into the drawing image and PDF. It also pointed out items to check on the drawing. The parametric model, the variable table, the drawing, and the tolerances are mine. Session summaries are on the [AI Disclosure](../../ai-disclosure.md) page.
-
-## Communicate
-
-<figure style="margin:1.6em 0; text-align:center;">
-  <img src="bracket-drawing.png" width="3400" height="2200" alt="Fully dimensioned ANSI B multiview drawing of the bracket in third angle projection: top view above, front view bottom left, right view to the right, with toleranced gap .508 ± .003, depth 1.661 ± .010, pin offset .750 ± .010, a tolerance block, and ASTM A36 steel as the material." style="width:100%; height:auto; display:block; margin:0 auto; border:1px solid var(--md-default-fg-color--lightest); border-radius:6px;">
-  <figcaption style="margin-top:.6em; font-size:.75rem; line-height:1.45; color:var(--md-default-fg-color--light);">Bracket drawing in third angle projection, ANSI B, 1:1, ASTM A36 steel.</figcaption>
-</figure>
-
-## CAD Download
-
-- <a href="bracket-drawing.pdf" download>Download the drawing (PDF)</a>, or the original <a href="Drawing.dxf" download>DXF</a>
-- <a href="A06.step" download>Download the bracket model (STEP)</a>
-
