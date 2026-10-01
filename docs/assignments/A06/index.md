@@ -48,5 +48,11 @@ Claude was used to lay out this page — placing the figures, writing the image 
 
 <figure style="margin:1.6em 0; text-align:center;">
   <img src="bracket-drawing.png" width="3400" height="2200" alt="Fully dimensioned ANSI B multiview drawing of the bracket in third angle projection: top view above, front view bottom left, right view to the right, with toleranced gap .508 ± .003, depth 1.661 ± .010, pin offset .750 ± .010, a tolerance block, and ASTM A36 steel as the material." style="width:100%; height:auto; display:block; margin:0 auto; border:1px solid var(--md-default-fg-color--lightest); border-radius:6px;">
-  <figcaption style="margin-top:.6em; font-size:.75rem; line-height:1.45; color:var(--md-default-fg-color--light);">Bracket drawing in third angle projection, ANSI B, 1:1, ASTM A36 steel. Download: <a href="bracket-drawing.pdf">PDF</a> · <a href="Drawing.dxf">DXF</a></figcaption>
+  <figcaption style="margin-top:.6em; font-size:.75rem; line-height:1.45; color:var(--md-default-fg-color--light);">Bracket drawing in third angle projection, ANSI B, 1:1, ASTM A36 steel.</figcaption>
 </figure>
+
+## CAD Download
+
+- <a href="bracket-drawing.pdf" download>Download the drawing (PDF)</a>, or the original <a href="Drawing.dxf" download>DXF</a>
+- <a href="A06.step" download>Download the bracket model (STEP)</a>
+
