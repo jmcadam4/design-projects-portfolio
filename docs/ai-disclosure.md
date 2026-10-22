@@ -111,6 +111,10 @@ Claude (Claude Code) was used to lay out this page — placing the figures, writ
 | 2 | 30 September 2026 | Resolved a merge conflict on this page in favor of the local version. No content. |
 | 3 | 30 September 2026 | Hours and a Time Spent section added from my figure, the page's AI Disclosure written, and this page's A6 entries written |
 
-## A7 through A11
+## A7 — Bracket FEA
+
+Claude Code laid out this page from my writeup and screenshots: the headings, figures, captions, and tables. It also wrote the Objective, the short Computation and Design II/III setup notes, the one-line result summaries, and the lessons-learned bullets in Reflections, all from my results. The modeling, FEA, results, design decisions, and the rest of the writeup are mine.
+
+## A8 through A11
 
 No AI used yet.
